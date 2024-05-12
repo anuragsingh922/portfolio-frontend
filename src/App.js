@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './App.module.css';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import {
@@ -23,7 +23,7 @@ function App() {
 
 
   return (
-    <>
+    <div className={styles.app}>
     <Toaster position="top-right" />
     
 
@@ -34,7 +34,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 

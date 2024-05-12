@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+  overflow: hidden;
+}
+
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.app::-webkit-scrollbar {
+  display: none;
+}
