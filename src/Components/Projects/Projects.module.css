@@ -41,6 +41,10 @@ body{
     align-items: center;
 }
 
+.li:hover{
+    box-shadow: 0px 0px 30px rgb(123, 123, 123);
+}
+
 .li a{
     width: 200px;
     height: 250px;

@@ -12,7 +12,7 @@ function Navbar({scrollToSection}) {
 
       <div className={css.nav}>
         <div className={css.leftsection}>
-          <p>🇦 🇳 🇺 🇷 🇦 🇬</p>
+          <a href="/"><p>🇦 🇳 🇺 🇷 🇦 🇬</p></a>
           </div>
         <div className={css.rightsection}>
           <ul className={css.ul}>
