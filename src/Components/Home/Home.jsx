@@ -45,7 +45,7 @@ function Navbar({ scrollToSection }) {
       stagger: 0.2,
     });
 
-    gsap.to(".li", {
+    gsap.to(".home_li", {
       opacity: 1,
       duration: 2,
       delay: 0.5,
@@ -106,19 +106,19 @@ function Navbar({ scrollToSection }) {
           </div>
           <div className={css.rightsection} id="rightsection">
             <ul className={css.ul}>
-              <li className={`${css.li} li`}>
+              <li className={`${css.li} home_li`}>
                 <a href="/" onClick={() => scrollToSection("projects")}>
                   {" "}
                   Projects
                 </a>
               </li>
-              <li className={`${css.li} li`}>
+              <li className={`${css.li} home_li`}>
                 <a href="/" onClick={() => scrollToSection("skills")}>
                   {" "}
                   Skills
                 </a>
               </li>
-              <li className={`${css.li} li`}>
+              <li className={`${css.li} home_li`}>
                 <a href="/" onClick={() => scrollToSection("blogs")}>
                   {" "}
                   Blogs

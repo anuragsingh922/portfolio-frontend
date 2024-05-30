@@ -44,6 +44,10 @@ body{
     align-items: center;
 }
 
+.set2{
+    opacity : 0;
+}
+
 .li:hover{
     box-shadow: 0px 0px 30px rgb(123, 123, 123);
 }

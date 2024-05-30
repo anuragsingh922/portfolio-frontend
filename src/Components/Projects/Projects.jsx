@@ -13,6 +13,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
   useEffect(() => {
+
+
     gsap.from(".heading", {
       duration: 2,
       opacity: 0,
@@ -21,7 +23,6 @@ function Projects() {
         trigger: ".heading",
         scroller: "body",
         start: "top 80%",
-        markers: true,
         end: "+=200px",
       },
     });
@@ -54,13 +55,47 @@ function Projects() {
         scrollTrigger: {
           trigger: element,
           scroller: "body",
-          start: "-50px 80%",
-          end: "+=100px",
-          markers: true,
+          start: "top 80%",
+          end: "+=200px",
           scrub : 2,
         },
       });
     });
+
+    const set3 = document.querySelectorAll(".set3");
+
+    set3.forEach(element => {
+      gsap.from(element, {
+        duration: 2,
+        x : 1700,
+        scrollTrigger: {
+          trigger: element,
+          scroller: "body",
+          start: "top 80%",
+          end: "+=200px",
+          scrub : 2,
+        },
+      });
+    });
+
+
+    const set2 = document.querySelectorAll(".set2");
+
+    set2.forEach(element => {
+      gsap.to(element, {
+        duration: 2,
+        opacity : 1,
+        scrollTrigger: {
+          trigger: element,
+          scroller: "body",
+          start: "10px 80%",
+          end: "+=100px",
+          scrub : 2,
+        },
+      });
+    });
+
+    
   }, []);
 
   return (
@@ -76,7 +111,7 @@ function Projects() {
           </a>
           <h3>Vonage</h3>
         </li>
-        <li className={`${css.li} li`} id="project2">
+        <li className={`${css.set2} ${css.li} li set2 `} id="project2">
           <a
             href="https://anuragsingh922.github.io/wecare/"
             target="_blank"
@@ -86,7 +121,7 @@ function Projects() {
           </a>
           <h3>WeCare</h3>
         </li>
-        <li className={`${css.li} li`} id="project3">
+        <li className={`${css.li} li set3`} id="project3">
           <a
             href="https://anuragsingh922.github.io/edit/"
             target="_blank"
@@ -106,7 +141,7 @@ function Projects() {
           </a>
           <h3>Upcomming Contest</h3>
         </li>
-        <li className={`${css.li} li`} id="project5">
+        <li className={`${css.set2} ${css.li} li set2`} id="project5">
           <a
             href="https://anuragsingh922.github.io/Weather_/"
             target="_blank"
@@ -116,13 +151,13 @@ function Projects() {
           </a>
           <h3>Weather</h3>
         </li>
-        <li className={`${css.li} li`} id="project6">
+        <li className={`${css.li} li set3`} id="project6">
           <a href="/" target="_blank" rel="noreferrer">
             <img src={News_img} alt="" />
           </a>
           <h3>Newzzy</h3>
         </li>
-        <li className={`${css.li} li`} id="project7">
+        <li className={`${css.set2} ${css.li} li set2`} id="project7">
           <a href="/" target="_blank" rel="noreferrer">
             <img src={Linkedin_img} alt="" />
           </a>
