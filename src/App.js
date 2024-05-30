@@ -11,6 +11,7 @@ import toast, { Toaster } from "react-hot-toast";
 import Failure from './Components/Toast/Failure'
 import Projects from './Components/Projects/Projects';
 import Skills from './Components/Skills/Skills';
+import Main from './Components/Main/Main';
 
 function App() {
 
@@ -29,7 +30,8 @@ function App() {
 
     <Router>
         <Routes>
-          <Route path="/" element={<> <Home scrollToSection={scrollToSection}/> <Projects/> <Skills/> <Footer/></>}>
+          <Route path="/" element={<> <Main scrollToSection={scrollToSection}/> </>}>
+          {/* <Route path="/" element={<> <Home scrollToSection={scrollToSection}/> <Projects/> <Skills/> <Footer/></>}> */}
             <Route path="/*" element={<Failure />} />
           </Route>
         </Routes>

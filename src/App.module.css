@@ -4,8 +4,8 @@ body{
 }
 
 .app{
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
+  width: calc(100%);
+  height: calc(100%);
   overflow: hidden;
 }
 
