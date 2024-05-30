@@ -25,6 +25,42 @@ function Projects() {
         end: "+=200px",
       },
     });
+
+
+    // const projects = document.querySelectorAll(".li");
+
+    // projects.forEach((element , index) => {
+    //     gsap.to(element, {
+    //         duration: 2,
+    //         opacity: 1,
+    //         scrollTrigger: {
+    //           trigger: element,
+    //           scroller: "body",
+    //           start: "-50px 80%",
+    //           markers: true,
+    //           end: "+=200px",
+    //           scrub : 2,
+    //         },
+    //       });
+    // });
+
+
+    const set1 = document.querySelectorAll(".set1");
+
+    set1.forEach(element => {
+      gsap.from(element, {
+        duration: 2,
+        x : -700,
+        scrollTrigger: {
+          trigger: element,
+          scroller: "body",
+          start: "-50px 80%",
+          end: "+=100px",
+          markers: true,
+          scrub : 2,
+        },
+      });
+    });
   }, []);
 
   return (
@@ -34,7 +70,7 @@ function Projects() {
       </h3>
 
       <ul className={`${css.ul}`}>
-        <li className={`${css.li} li`} id="project1">
+        <li className={`${css.li} li set1`} id="project1">
           <a href="/" target="_blank" rel="noreferrer">
             <img src={Voange_img} alt="" />
           </a>
@@ -60,7 +96,7 @@ function Projects() {
           </a>
           <h3>Edit</h3>
         </li>
-        <li className={`${css.li} li`} id="project4">
+        <li className={`${css.li} li set1`} id="project4">
           <a
             href="https://anuragsingh922.github.io/Upcoming_Contests/"
             target="_blank"

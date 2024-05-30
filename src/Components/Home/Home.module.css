@@ -141,19 +141,19 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 }
 
 .skills_li{
-    width: 30%;
+    width: 20%;
     margin-left: 50%;
     border-radius: 50%;
-    height: 20%;
+    height: 10%;
     opacity: 0;
     scale: 0;
 }
 
 .skills_li_2{
-    width: 30%;
+    width: 20%;
     margin-right: 50%;
     border-radius: 50%;
-    height: 20%;
+    height: 10%;
     opacity: 0;
     scale: 0;
 }
@@ -162,10 +162,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     width: 100%;
     height: 100%;
     object-fit: contain;
+    border-radius: 50%;
 }
 
 .skills_li_2 img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.express{
+    opacity: 0;
 }

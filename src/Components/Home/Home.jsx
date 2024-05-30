@@ -79,13 +79,13 @@ function Navbar({ scrollToSection }) {
     gsap.to(".skills_1", {
       duration: 2,
       delay: 0.5,
-      skewX : 10
+      skewX : 20
     });
 
     gsap.to(".skills_2", {
       duration: 2,
       delay: 0.5,
-      skewX : 10,
+      skewY : 20,
       yoyo : 1,
     });
   }, []);
@@ -129,21 +129,20 @@ function Navbar({ scrollToSection }) {
         </div>
 
         <div className={css.circle_c}>
-          <div className={`${css.skills} skills_1`}>
-            <li className={`${css.skills_li} skill1`} id="skill1">
-              <img src={Express_img} alt="" />
-            </li>
 
-            <li className={`${css.skills_li} skill1`} id="skill1">
-              <img src={React_img} alt="" />
+        <div className={css.circle}>
+            <img src={Profile} alt="imagee" id="img" />
+          </div>
+
+
+
+          <div className={`${css.skills} skills_1`}>
+            <li className={`${css.skills_li} skill ${css.express}`}>
+              <img src={Express_img} alt="" />
             </li>
             <li className={`${css.skills_li} skill1`} id="skill1">
               <img src={Node_img} alt="" />
             </li>
-          </div>
-
-          <div className={css.circle}>
-            <img src={Profile} alt="imagee" id="img" />
           </div>
 
           <div className={`${css.skills} skills_2`}>
