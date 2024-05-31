@@ -79,14 +79,14 @@ function Navbar({ scrollToSection }) {
     gsap.to(".skills_1", {
       duration: 2,
       delay: 0.5,
-      skewX : 20
+      skewX: 20,
     });
 
     gsap.to(".skills_2", {
       duration: 2,
       delay: 0.5,
-      skewY : 20,
-      yoyo : 1,
+      skewY: 20,
+      yoyo: 1,
     });
   }, []);
 
@@ -129,12 +129,9 @@ function Navbar({ scrollToSection }) {
         </div>
 
         <div className={css.circle_c}>
-
-        <div className={css.circle}>
+          <div className={css.circle}>
             <img src={Profile} alt="imagee" id="img" />
           </div>
-
-
 
           <div className={`${css.skills} skills_1`}>
             <li className={`${css.skills_li} skill ${css.express}`}>
