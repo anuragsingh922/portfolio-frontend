@@ -89,7 +89,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 
 .circle{
     width: 40%;
-    height: 400px;
+    height: 550px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -98,8 +98,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 }
 
 .circle img {
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 550px;
     padding-left: 70px;
     /* border-radius: 50%; */
     object-fit: cover;

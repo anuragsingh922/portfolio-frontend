@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import css from "./Home.module.css";
-import Profile from "../../Assets/image/profile5.png";
+import Profile from "../../Assets/image/profile9.png";
 import Whatsapp_Img from "../../Assets/image/Links/whatsapp.png";
 import Insta_Img from "../../Assets/image/Links/instagram.png";
 import Linkedin_Img from "../../Assets/image/Links/linkedin.png";
@@ -11,11 +11,12 @@ import Node_img from "../../Assets/image/skills/node.png";
 import Sql_img from "../../Assets/image/skills/sql.png";
 import Vonage_img from "../../Assets/image/skills/Vonage.png";
 import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Navbar({ scrollToSection }) {
-  useEffect(() => {
+  useGSAP(() => {
     // const panels = document.querySelectorAll("#link");
 
     // panels.forEach((panel, i) => {
@@ -107,19 +108,19 @@ function Navbar({ scrollToSection }) {
           <div className={css.rightsection} id="rightsection">
             <ul className={css.ul}>
               <li className={`${css.li} home_li`}>
-                <a href="/" onClick={() => scrollToSection("projects")}>
+                <a href="#" onClick={() => scrollToSection("projects")}>
                   {" "}
                   Projects
                 </a>
               </li>
               <li className={`${css.li} home_li`}>
-                <a href="/" onClick={() => scrollToSection("skills")}>
+                <a href="#" onClick={() => scrollToSection("skills")}>
                   {" "}
                   Skills
                 </a>
               </li>
               <li className={`${css.li} home_li`}>
-                <a href="/" onClick={() => scrollToSection("blogs")}>
+                <a href="#" onClick={() => scrollToSection("blogs")}>
                   {" "}
                   Blogs
                 </a>

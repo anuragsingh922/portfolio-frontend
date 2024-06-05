@@ -17,7 +17,7 @@ function Projects() {
   useGSAP(
     () => {
       gsap.from(".heading", {
-        duration: 2,
+        duration: 1,
         opacity: 0,
         x: 1200,
         scrollTrigger: {
@@ -25,6 +25,7 @@ function Projects() {
           scroller: "body",
           start: "top 80%",
           end: "+=200px",
+          scrub : 2,
         },
       });
 
@@ -81,12 +82,11 @@ function Projects() {
 
       set2.forEach((element) => {
         gsap.to(element, {
-          duration: 2,
           opacity: 1,
           scrollTrigger: {
             trigger: element,
             scroller: "body",
-            start: "10px 80%",
+            start: "90px 80%",
             end: "+=100px",
             scrub: 2,
           },
@@ -96,8 +96,16 @@ function Projects() {
 
       const string = document.querySelector("#string");
 
-      string.addEventListener("mousemove", function (dets) {
-        let path = `M 10 50 Q 500 ${dets.y - 400} 990 50`;
+      
+      string.addEventListener("mousemove", (e)=> {
+        let boundingRect = string.getBoundingClientRect();
+
+        const mousePosX = e.x - boundingRect.left; // X position
+        const mousePosY = e.y - boundingRect.top; // Y position
+
+        console.log("X : " , mousePosX);
+        console.log("Y : " , mousePosY);
+        let path = `M 10 50 Q 500 ${mousePosY} 990 50`;
 
         console.log("Path  : ", path);
 
@@ -120,11 +128,6 @@ function Projects() {
 
   return (
     <>
-      <div className={`${css.svg}`} id="string" ref={container}>
-        <svg width="1000px" height="100">
-          <path d="M 10 50 Q 500 50 990 50" stroke="black" fill="transparent" />
-        </svg>
-      </div>
       <section id="projects" className={`${css.section}`} >
         <h3 className={`${css.heading} heading`} id="project">
           Projects
@@ -191,6 +194,11 @@ function Projects() {
           </li>
         </ul>
       </section>
+      <div className={`${css.svg}`} id="string" ref={container}>
+        <svg width="1000px" height="100">
+          <path d="M 10 50 Q 500 50 990 50" stroke="black" fill="transparent" />
+        </svg>
+      </div>
     </>
   );
 }
