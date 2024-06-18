@@ -1,12 +1,15 @@
 import React, { useEffect, useReducer, useRef } from "react";
 import css from "./Projects.module.css";
-import Voange_img from "../../Assets/image/Projects/Vonage.png";
+import Portfolio_img from "../../Assets/image/Projects/portfolio.png";
 import HealthMate_img from "../../Assets/image/Projects/HealthMate.jpeg";
 import Edit_img from "../../Assets/image/Projects/Edit.png";
 import Contest_img from "../../Assets/image/Projects/Contest.png";
 import Weather_img from "../../Assets/image/Projects/Weather.png";
 import News_img from "../../Assets/image/Projects/News.png";
 import Linkedin_img from "../../Assets/image/Projects/Linkedin.png";
+import AI_img from "../../Assets/image/Projects/whisper.jpg";
+import Vision_img from "../../Assets/image/Projects/ai2.jpg";
+import Darwin_img from "../../Assets/image/Projects/darwin.png";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -134,23 +137,41 @@ function Projects() {
         </h3>
 
         <ul className={`${css.ul}`}>
+
+
           <li className={`${css.li} li set1`} id="project1">
-            <a href="/" target="_blank" rel="noreferrer">
-              <img src={Voange_img} alt="" />
+            <a href="https://github.com/Cognation/darwin" target="_blank" rel="noreferrer">
+              <img src={Darwin_img} alt="" />
             </a>
-            <h3>Vonage</h3>
+            <h3>Darwin</h3>
           </li>
-          <li className={`${css.set2} ${css.li} li set2 `} id="project2">
-            <a
-              href="https://anuragsingh922.github.io/wecare/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={HealthMate_img} alt="" />
+
+
+        <li className={`${css.li} ${css.set2} li set2`} id="project1">
+            <a href="https://vision-ivy.netlify.app/" target="_blank" rel="noreferrer">
+              <img src={Vision_img} alt="" />
             </a>
-            <h3>WeCare</h3>
+            <h3>Vision</h3>
           </li>
-          <li className={`${css.li} li set3`} id="project3">
+
+
+
+          <li className={`${css.li} li set3`} id="project1">
+            <a href="https://stream-whisper.netlify.app/" target="_blank" rel="noreferrer">
+              <img src={AI_img} alt="" />
+            </a>
+            <h3>Whisper</h3>
+          </li>
+
+
+
+
+
+
+
+          
+
+          <li className={`${css.li} li set1`} id="project3">
             <a
               href="https://anuragsingh922.github.io/edit/"
               target="_blank"
@@ -160,7 +181,18 @@ function Projects() {
             </a>
             <h3>Edit</h3>
           </li>
-          <li className={`${css.li} li set1`} id="project4">
+
+          <li className={`${css.set2} ${css.li} li set2`} id="project2">
+            <a
+              href="https://anuragsingh922.github.io/wecare/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={HealthMate_img} alt="" />
+            </a>
+            <h3>WeCare</h3>
+          </li>
+          <li className={`${css.li} li set3`} id="project4">
             <a
               href="https://anuragsingh922.github.io/Upcoming_Contests/"
               target="_blank"
@@ -170,6 +202,19 @@ function Projects() {
             </a>
             <h3>Upcomming Contest</h3>
           </li>
+
+          <li className={`${css.li} li set1`} id="project7">
+            <a href="https://linkedin-scraper.netlify.app/" target="_blank" rel="noreferrer">
+              <img src={Linkedin_img} alt="" />
+            </a>
+            <h3>Linkedin Scraper</h3>
+          </li>
+
+
+          
+
+          
+
           <li className={`${css.set2} ${css.li} li set2`} id="project5">
             <a
               href="https://anuragsingh922.github.io/Weather_/"
@@ -180,18 +225,15 @@ function Projects() {
             </a>
             <h3>Weather</h3>
           </li>
+
           <li className={`${css.li} li set3`} id="project6">
             <a href="/" target="_blank" rel="noreferrer">
               <img src={News_img} alt="" />
             </a>
             <h3>Newzzy</h3>
           </li>
-          <li className={`${css.set2} ${css.li} li set2`} id="project7">
-            <a href="/" target="_blank" rel="noreferrer">
-              <img src={Linkedin_img} alt="" />
-            </a>
-            <h3>Linkedin Scraper</h3>
-          </li>
+
+
         </ul>
       </section>
       <div className={`${css.svg}`} id="string" ref={container}>

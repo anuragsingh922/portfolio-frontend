@@ -119,12 +119,12 @@ function Navbar({ scrollToSection }) {
                   Skills
                 </a>
               </li>
-              <li className={`${css.li} home_li`}>
+              {/* <li className={`${css.li} home_li`}>
                 <a href="#" onClick={() => scrollToSection("blogs")}>
                   {" "}
                   Blogs
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
